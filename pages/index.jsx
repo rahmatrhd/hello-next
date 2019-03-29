@@ -1,14 +1,10 @@
-import Link from 'next/link'
+import NavigationBar from '../components/NavigationBar'
 
 const Index = () => {
   return (
     <React.Fragment>
+      <NavigationBar />
       <h1>Hello Next!</h1>
-      <ul>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
     </React.Fragment>
   )
 }
