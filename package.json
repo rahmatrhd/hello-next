@@ -1,0 +1,27 @@
+{
+  "name": "first-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx next",
+    "build": "npx next build",
+    "start" : "npx next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahmatrhd/hello-next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahmatrhd/hello-next/issues"
+  },
+  "homepage": "https://github.com/rahmatrhd/hello-next#readme",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
