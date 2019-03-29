@@ -1,13 +1,12 @@
-import NavigationBar from '../components/NavigationBar'
+import withLayout from '../components/templates/withLayout'
 
 const About = () => {
   return (
     <React.Fragment>
-      <NavigationBar />
       <h1>About</h1>
       <p>This is about page</p>
     </React.Fragment>
   )
 }
 
-export default About
+export default withLayout()(About)

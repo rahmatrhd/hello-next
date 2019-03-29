@@ -1,12 +1,11 @@
-import NavigationBar from '../components/NavigationBar'
+import withLayout from '../components/templates/withLayout'
 
 const Index = () => {
   return (
     <React.Fragment>
-      <NavigationBar />
       <h1>Hello Next!</h1>
     </React.Fragment>
   )
 }
 
-export default Index
+export default withLayout()(Index)
