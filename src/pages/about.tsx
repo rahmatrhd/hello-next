@@ -1,3 +1,4 @@
+import React from 'react'
 import withLayout from '../components/templates/withLayout'
 
 const About = () => {

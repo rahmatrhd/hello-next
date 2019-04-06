@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx next ./src",
     "build": "npx next build ./src",
-    "start" : "npx next start ./src"
+    "start": "npx next start ./src"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,13 @@
   },
   "homepage": "https://github.com/rahmatrhd/hello-next#readme",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "next": "^8.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.3",
+    "@types/react": "^16.8.12"
   }
 }
