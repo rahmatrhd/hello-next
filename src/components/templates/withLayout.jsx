@@ -1,4 +1,4 @@
-import NavigationBar from '../NavigationBar'
+import NavigationBar from '../organisms/NavigationBar'
 
 export default () => (Component) => (props) => (
   <React.Fragment>
