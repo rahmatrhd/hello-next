@@ -13,6 +13,11 @@ const NavigationBar = () => {
           <a>About</a>
         </Link>
       </li>
+      <li>
+        <Link href="/pokemons">
+          <a>Pokemons</a>
+        </Link>
+      </li>
     </ul>
   )
 }

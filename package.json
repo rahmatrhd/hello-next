@@ -21,11 +21,13 @@
   "homepage": "https://github.com/rahmatrhd/hello-next#readme",
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
+    "axios": "^0.18.0",
     "next": "^8.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/next": "^8.0.3",
     "@types/react": "^16.8.12"
   }
