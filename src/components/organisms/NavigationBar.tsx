@@ -14,7 +14,7 @@ const NavigationBar = () => {
         </Link>
       </li>
       <li>
-        <Link href="/pokemons">
+        <Link prefetch href="/pokemons">
           <a>Pokemons</a>
         </Link>
       </li>
