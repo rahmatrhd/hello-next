@@ -1,5 +1,5 @@
 import React from 'react'
-import withLayout from '../components/templates/withLayout'
+import withLayout from '../templates/withLayout'
 
 const About = () => {
   return (

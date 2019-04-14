@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import withLayout from '../components/templates/withLayout'
+import withLayout from '../templates/withLayout'
 
 export interface PokemonsProps {
   pokemons: Array<{name: string}>

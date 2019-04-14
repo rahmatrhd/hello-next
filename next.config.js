@@ -1,3 +1,7 @@
 const withTypescript = require('@zeit/next-typescript')
 
-module.exports = withTypescript()
+const nextConfig = {
+  distDir: '../../.next', // relative to `pages` dir, see scripts in package.json
+}
+
+module.exports = withTypescript(nextConfig)
