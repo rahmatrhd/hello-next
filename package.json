@@ -24,11 +24,14 @@
     "axios": "^0.18.0",
     "next": "^8.0.3",
     "react": "^16.8.6",
+    "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/next": "^8.0.3",
-    "@types/react": "^16.8.12"
+    "@types/react": "^16.8.12",
+    "fork-ts-checker-webpack-plugin": "^1.0.2",
+    "typescript": "^3.4.3"
   }
 }
