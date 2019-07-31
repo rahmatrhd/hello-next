@@ -1,7 +1,8 @@
 import React from 'react'
 import withLayout from '../templates/withLayout'
+import { NextPage } from 'next';
 
-const About = () => {
+const About: NextPage = () => {
   return (
     <React.Fragment>
       <h1>About</h1>
