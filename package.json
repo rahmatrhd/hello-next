@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/rahmatrhd/hello-next#readme",
   "dependencies": {
-    "@zeit/next-typescript": "^1.1.1",
     "axios": "^0.18.0",
     "next": "^9.0.2",
     "react": "^16.8.6",
@@ -32,7 +31,6 @@
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
-    "fork-ts-checker-webpack-plugin": "^1.0.2",
     "typescript": "^3.4.3"
   }
 }
