@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import withLayout from '../templates/withLayout'
+import withLayout from '../../templates/withLayout'
 import { NextPage } from 'next';
+import Link from 'next/link';
 
 export interface PokemonsProps {
   pokemons: Array<{name: string}>
@@ -12,7 +13,13 @@ const Pokemons: NextPage<PokemonsProps> = ({ pokemons }) => {
     <React.Fragment>
       <h1>pokemons</h1>
       <ul>
-        {pokemons.map(pokemon => <li key={pokemon.name}>{pokemon.name}</li>)}
+        {pokemons.map(pokemon => (
+          <li key={pokemon.name}>
+            <Link href="/pokemons/[name]" as={`/pokemons/${pokemon.name}`}>
+              <a>{pokemon.name}</a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </React.Fragment>
   );
