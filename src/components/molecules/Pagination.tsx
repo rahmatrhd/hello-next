@@ -1,5 +1,5 @@
 import React, { StatelessComponent } from 'react';
-import pagination from '../utils/pagination';
+import pagination from '../../utils/pagination';
 import Link, { LinkProps } from 'next/link';
 
 export interface PaginationProps {

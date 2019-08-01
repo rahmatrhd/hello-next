@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { NextPage } from 'next';
-import withLayout from '../../templates/withLayout';
+import withLayout from '../../components/templates/withLayout';
 
 export interface Pokemon {
     abilities: Array<Object>;

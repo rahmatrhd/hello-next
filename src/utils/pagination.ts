@@ -5,7 +5,7 @@ const pagination = (current: number, total: number, limit: number): Array<number
     let right = current + delta + 1;
     let range = [];
     let result = [];
-    let l: number;
+    let l;
 
     for (let i = 1; i <= last; i++) {
         if (i == 1 || i == last || i >= left && i < right) {
