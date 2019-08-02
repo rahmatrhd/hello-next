@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx next ./src",
-    "build": "npx next build ./src",
-    "start": "npx next start ./src"
+    "dev": "npx next",
+    "build": "npx next build",
+    "start": "npx next start"
   },
   "repository": {
     "type": "git",
