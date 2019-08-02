@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx next",
-    "build": "npx next build",
-    "start": "npx next start",
+    "dev": "npx nodemon",
+    "build": "npx next build && npx tsc --project tsconfig.server.json",
+    "start": "NODE_ENV=production node dist",
     "deploy": "npx now"
   },
   "repository": {
@@ -22,6 +22,9 @@
   "homepage": "https://github.com/rahmatrhd/hello-next#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
     "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dev-utils": "^8.0.0",
@@ -32,7 +35,9 @@
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
+    "nodemon": "^1.19.1",
     "now": "^15.8.7",
-    "typescript": "^3.4.3"
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   }
 }
