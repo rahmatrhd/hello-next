@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx next",
     "build": "npx next build",
-    "start": "npx next start"
+    "start": "npx next start",
+    "deploy": "npx now"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
+    "now": "^15.8.7",
     "typescript": "^3.4.3"
   }
 }
