@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import authService from '../../services/auth';
+import useAuthentication from '../hooks/useAuthentication';
 
 const NavigationBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    if (isLoggedIn) {
-      authService.login();
-    } else {
-      authService.logout();
-    }
-  }, [isLoggedIn]);
+  const { isLoggedIn, login, logout } = useAuthentication();
 
   return (
     <React.Fragment>
@@ -35,13 +27,17 @@ const NavigationBar = () => {
       <ul>
         <li>
           {isLoggedIn ? (
-            <button onClick={() => setIsLoggedIn(false)}>logout</button>
+            <button onClick={logout}>logout</button>
           ) : (
-            <button onClick={() => setIsLoggedIn(true)}>login</button>
+            <button onClick={login}>login</button>
           )}
         </li>
         {isLoggedIn && (
-          <li>hi, user!</li>
+          <li>
+            <Link href="/profile">
+              <a>hi, user!</a>
+            </Link>
+          </li>
         )}
       </ul>
     </React.Fragment>

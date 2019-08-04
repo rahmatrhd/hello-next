@@ -2,6 +2,9 @@ import dotenv from 'dotenv';
 import next from 'next';
 import express from 'express';
 import morgan from 'morgan';
+import cookieParser from 'cookie-parser';
+
+import { authenticated } from './middlewares/auth';
 
 dotenv.config();
 
@@ -14,7 +17,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
     const server = express();
 
-    server.use(morgan('tiny'))
+    server.use(morgan('tiny'));
+    server.use(cookieParser());
 
     server.get('/', (req, res) => {
         return app.render(req, res, '/', req.query);
@@ -28,8 +32,11 @@ app.prepare().then(() => {
     server.get('/pokemons/:name', (req, res) => {
         return app.render(req, res, '/pokemons/[name]', { ...req.query, name: req.params.name });
     });
+    server.get('/profile', authenticated, (req, res) => {
+        return app.render(req, res, '/profile', req.query);
+    });
     server.get('*', (req, res) => {
-        return handle(req, res, )
+        return handle(req, res);
     });
 
     server.listen(port, err => {
