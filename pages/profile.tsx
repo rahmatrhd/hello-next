@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import withLayout from "../components/templates/withLayout";
 
 const Profile: NextPage = () => {
     return (
@@ -7,4 +6,4 @@ const Profile: NextPage = () => {
     )
 };
 
-export default withLayout()(Profile);
+export default Profile;

@@ -1,5 +1,4 @@
 import React from 'react'
-import withLayout from '../components/templates/withLayout'
 import { NextPage } from 'next';
 
 const Index: NextPage = () => {
@@ -10,4 +9,4 @@ const Index: NextPage = () => {
   )
 }
 
-export default withLayout()(Index)
+export default Index

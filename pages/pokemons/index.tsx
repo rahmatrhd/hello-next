@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import withLayout from '../../components/templates/withLayout'
 import { NextPage, NextPageContext } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -66,4 +65,4 @@ Pokemons.getInitialProps = async ({ query }) => {
     }
 }
 
-export default withLayout()(Pokemons)
+export default Pokemons;

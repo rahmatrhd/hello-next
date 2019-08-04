@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { NextPage } from 'next';
-import withLayout from '../../components/templates/withLayout';
 
 export interface Pokemon {
     abilities: Array<Object>;
@@ -50,4 +49,4 @@ PokemonDetail.getInitialProps = async ({ query }) => {
   }
 }
 
-export default withLayout()(PokemonDetail);
+export default PokemonDetail;
